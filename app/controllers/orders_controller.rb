@@ -1,6 +1,8 @@
 class OrdersController<ApplicationController
     def index
-        render plain:Order.all.map {|order| order.to_pleasant_string}.join("\n")
+        #current_user
+        render "index"
+        #render plain:Order.all.map {|order| order.to_pleasant_string}.join("\n")
     end
     def show
         id=params[:id]

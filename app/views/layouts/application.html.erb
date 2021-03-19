@@ -11,6 +11,10 @@
   </head>
 
   <body>
+  <% if @current_user %>
+  <p>
+  <%= @current_user.first_name %>!
+  </p>
     <%= yield %>
   </body>
 </html>
