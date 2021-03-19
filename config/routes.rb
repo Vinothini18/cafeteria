@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'order_item/index'
+  get 'menu_item/index'
+  get 'menu/index'
+  get 'menu/name'
   #root :to => "\"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get "/" =>"home#index"

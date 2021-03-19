@@ -16,6 +16,9 @@
   <%= @current_user.first_name %>!
   <%= link_to "sign-out" ,destroy_session_path,method: "delete"%>
   </p>
+
     <%= yield %>
   </body>
 </html>
+<% end %>
+
