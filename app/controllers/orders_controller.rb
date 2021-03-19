@@ -1,6 +1,6 @@
 class OrdersController<ApplicationController
     def index
-        #current_user
+        current_user
         render "index"
         #render plain:Order.all.map {|order| order.to_pleasant_string}.join("\n")
     end

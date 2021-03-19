@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
         if current_user_id
             @current_user=User.find(current_user_id)
         else
-            nil
+            render plain:"ERROR"
         end
     end
 end
